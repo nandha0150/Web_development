@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning lecture 1</title>
+</head>
+<!-- As homepage only the index page gets loaded first -->
+<body>
+    <a href="blog.html">Go to the blog site!</a>
+    <br><br><br>
+    Lorem ipsum dolor, <strong>sit amet consectetur adipisicing elit. Est laudantium </strong>repellat ullam libero voluptatem dignissimos eveniet magni optio facere debitis officiis <a href = "https://www.google.co.in" target = _blank>autem animi vero fugit suscipit fuga, quae hic nobis?</a> Voluptate nobis, omnis quos earum nesciunt ex natus. Consectetur ut itaque placeat dicta consequuntur voluptatibus dolores quas aliquid natus voluptatum magnam cumque quos voluptatem animi quis cum beatae aperiam, minus eos aspernatur numquam sapiente vitae sit? Sed adipisci quidem quibusdam qui soluta alias minus? Reprehenderit distinctio earum sed dolores pariatur temporibus sequi! Asperiores amet quas aliquid necessitatibus quam vel magni, enim maiores eligendi aspernatur quae temporibus, fuga deleniti illum in!
+
+    <!-- Creating lists  -->
+    <!-- ul signifies unordered lists and each list item should have li tag -->
+    <ul>
+        <li>Today is Wednesday</li>
+        <li>Target is to complete thesis</li>
+        <li>Physics is my favorite subject</li>
+    </ul>
+    <ol>
+        <li>Today is Wednesday</li>
+        <li>Target is to complete thesis</li>
+        <li>Physics is my favorite subject</li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Nandha Kumar</td>
+            <td>28</td>
+            <td>M</td>
+            </tr>
+
+            <tr>       
+            <td>Chandra</td>
+            <td>25</td>
+            <td>M</td>
+            </tr>
+
+            <tr>        
+            <td>Jane doe</td>
+            <td>20</td>
+            <td>F</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <!-- Dont use tables for layout design, use table only for tabular data storing and working -->
+
+    <hr>
+    <br><br><br>
+    
+    <!-- Forms - to get and store user input and stuff, linked with dynamic programming php 
+    and using html we can just display how the form looks  -->
+
+    <form action="process.php" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name = "firstName"
+            placeholder="Please enter your First name">           
+        </div>
+        <br>
+
+        <div>
+            <label>Last Name</label>
+            <input type="text" name = "lastName"
+            placeholder="Please enter your Last name">           
+        </div>
+        <br>
+        <div>
+            <label>Mail ID</label>
+            <input type="email" name = "email">           
+        </div>
+
+        <br>
+        <div>
+            <label>Text area</label>
+            <textarea name = "message"></textarea>          
+        </div>
+
+        <br>
+        <div>
+            <label>Gender </label>
+            <select name = "gender">    
+             <option value = "nothing">Kindly select a gender</option>
+             <option value = "male">Male</option>
+             <option value = "female">FeMale</option>
+             <option value = "others">Others</option>
+            </select> 
+        </div>
+
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" value="28">      
+        </div> 
+
+        <br>
+        <div>
+            <label>Your birthday</label>
+            <input type="date" name="birthday">      
+        </div>
+
+        <br>
+        <!-- Creating a submit button 
+        But it doesn't do anything - For adding functionality we need javascript  -->
+        <div>
+            <input type="submit" name="submit"
+            value="Submit">      
+        </div>
+
+    </form>
+    <button>Click me! But I will do nothing</button>
+
+    <!-- Image tag -->
+    <br>
+    <hr>
+    <a href = "images/programming.jpg" target = _blank>
+    <img src="images/programming.jpg" alt="Programming graphics image" width=" 200">
+    </a>
+
+    <!-- Quotations - block quote, abbreviate and cite -->
+
+    <blockquote cite="https://www.google.co.in">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, veniam quo beatae ab amet necessitatibus, cum, quae vitae molestias incidunt modi vel sed minus unde deserunt sapiente harum totam facilis suscipit. Vitae asperiores quidem ex doloribus. A temporibus nesciunt ipsam illo vitae, corporis unde dolorem nobis? Eius enim architecto consequatur aspernatur omnis error dolores animi, est, reprehenderit, adipisci cum ex tenetur corrupti dolor dolorum? Earum excepturi dolorem quo atque totam sed facilis praesentium impedit ipsum magni distinctio quam iste voluptas deleniti eligendi, fugiat et quidem. Eveniet amet ullam ipsa labore, corrupti facilis omnis provident quibusdam atque ratione possimus officiis! Veniam.
+    </blockquote>
+    <p>The <abbr title ="Machine design section"> MDS </abbr> is awesome!</p>
+    <p><cite>IIT Madras</cite> by MHRD, India</p>
+
+    <div style = "margin-top: 600px;"></div>
+</body>
+</html>
